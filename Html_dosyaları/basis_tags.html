@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--Document type-->
+<html lang="tr">
+  <!--dili belirlemek için-->
+  <head>
+    <!--  Head kısmında daha çok başlıklar logolar bulunur -->
+    <meta charset="UTF-8" />
+    <!-- türkçe destekli char seti-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--boyutlandırma-->
+    <title>HTML Dersleri - Başlık Etiketleri</title>
+  </head>
+  <!--Body kısmında ise sitemze dair genelde gördüğümüz her şey burdadır -->
+  <body>
+    <div>
+      Normal Yazı
+      <!--Heading-->
+      <h1>Başlık 1</h1>
+      <h2>Başlık 2</h2>
+      <h3>Başlık 3</h3>
+      <h4>Başlık 4</h4>
+      <h5>Başlık 5</h5>
+      <h6>Başlık 6</h6>
+    </div>
+    <!--Paragraph-->
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+        veritatis aperiam, recusandae perferendis, exercitationem vitae
+        dignissimos numquam animi sequi, amet assumenda eaque nostrum incidunt
+        minima maiores fuga dicta accusamus fugit!
+      </p>
+      <!--LINE and DASH  "SATIR VE ÇİZGİ"-->
+      <!--<br \> tagı sonrasında gelen paragrafı alt satıra geçirir kaç br kullanırsanız o kadar satır aşağı iner br:break-->
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
+        Magni, sapiente. Illo quos beatae veniam repellendus excepturi, quisquam
+        ut vitae nobis in asperiores, exercitationem, atque fugiat maiores
+        consequatur totam quibusdam iusto.
+      </p>
+    </div>
+    <hr \ />
+    <div>
+      <p>
+        <!--<hr \>=horizontal bu da konulduğu yerde yatay bir çizgi (dash ) oluşturur-->
+
+        Çizginin alt kısmında kalan paragraf
+      </p>
+      <!--TEXT FORMATİNG "METİN BİÇİMLENDİRME"-->
+      <p>Bu metinde <b>kalın(bold)</b> yazmayı öğreniyoruz</p>
+      <p>Bu metinde <i>italic</i> yazmayı öğreniyoruz</p>
+      <!--SEO=SEARCH ENGİNE OPTİMİZASYON  YANİ AŞŞAĞIDAKİ SİSTEMLER YUKARIDAKİ TAGLARLA AYNI GÖREVİ GÖRÜYOR AMA TAG İN İÇİNE ALDIĞINIZ SÖZCÜĞÜ İNSANLAR NORMAL ARAMA MOTORUNDA ARARKEN DAHA GÖRÜNEBİLİR KILIYOR BU SAYEDE WEB SİTENİZ ÖN PLANA ÇIKMIŞ OLUYOR-->
+      <p>Bu metinde daha <strong>güçlü</strong> yazmayı öğreniyoruz</p>
+      <p>
+        Bu metinde <em>italic ama daha öne çıkacak şekilde</em> yazmayı
+        öğreniyoruz
+      </p>
+    </div>
+    <hr \ />
+
+    <!--SPECİFİC TEXT TYPES-->
+    <!--blockquote uzun alıntı olduğunu belli eder **footer ın içinde **cite kimden alındığını gösterir ANCAK FOOTER <p></p> içinde kullanmamak daha uygundur-->
+    <div>
+      <blockquote>
+        <p>bu bir uzun alıntıdır</p>
+        <footer><cite>Mustafa AYYILDIZ</cite></footer>
+      </blockquote>
+      <hr \ />
+      <!--<q> kısa alıntı için kullanılır-->
+      <p><q>kıs alıntı</q></p>
+    </div>
+    <hr \ />
+    <div>
+      <h3>Cod olduğunu belirtme</h3>
+      <!--<code> tagı ile sağlanır-->
+      <p>bu bir code örneği: <code>console.log("merhaba")</code></p>
+    </div>
+    <div>
+      <h3>Biçimlendirilmiş Metin(Pre)</h3>
+      <!--<p> yerine <pre> tagını kullanırsak editörde yazdığımız text tarayıcıya aynen yansır-->
+      <pre>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Ex eveniet natus soluta placeat recusandae. 
+                   Itaque unde dolor aut. Excepturi deleniti consectetur officiis magni 
+                         repellendus illum recusandae neque et! Omnis, eum!
+        </pre
+      >
+    </div>
+    <!--<div> TAGI BÖLÜMLERE AYIRMAK İÇİN KULLANILIR-->
+  </body>
+</html>
