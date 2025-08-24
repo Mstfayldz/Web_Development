@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <h2>Table</h2>
+    <!--<tr>==>table row  /// <td>==> table detail  /// <th>==> table head  border==> çerçeve-->
+    <div>
+      <table border="1" width="400" height="300">
+        <caption>
+          Çalışanlar Tablosu
+        </caption>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Last Name</th>
+          <th>Wage</th>
+        </tr>
+        <tr>
+          <th>256</th>
+          <td>Mustafa</td>
+          <td>AYYILDIZ</td>
+          <td>75000</td>
+        </tr>
+        <tr>
+          <th>243</th>
+          <td>Ali</td>
+          <td>KARADUMAN</td>
+          <td>60000</td>
+        </tr>
+        <tr>
+          <th>333</th>
+          <td>Talha</td>
+          <td>KIZILKOCA</td>
+          <td>65000</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <!--colspan ve rowspan ile satırları veya sütünları yayabiliyoruz-->
+      <table border="1" width="400" height="300">
+        <caption>
+          Çalışanlar Tablosu
+        </caption>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Last Name</th>
+          <th>Wage</th>
+        </tr>
+        <tr>
+          <th>256</th>
+          <td rowspan="2">Mustafa</td>
+          <td>AYYILDIZ</td>
+          <td>75000</td>
+        </tr>
+        <tr>
+          <th>243</th>
+          <td colspan="2">Ali</td>
+          <td>KARADUMAN</td>
+          <td>60000</td>
+        </tr>
+        <tr>
+          <th>333</th>
+          <td>Talha</td>
+          <td>KIZILKOCA</td>
+          <td>65000</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <!--Tablo Gövdeleri-->
+      <table border="1" width="400" height="300">
+        <caption>
+          Gövde Düzenine Uygun Tablo
+        </caption>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>İsim</th>
+            <th>Soyisim</th>
+            <th>Maaş</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>256</td>
+            <td>Mustafa</td>
+            <td>AYYILDIZ</td>
+            <td>75000</td>
+          </tr>
+          <tr>
+            <td>243</td>
+            <td>Ali</td>
+            <td>KARADUMAN</td>
+            <td>60000</td>
+          </tr>
+          <tr>
+            <td>333</td>
+            <td>Talha</td>
+            <td>KIZILKOCA</td>
+            <td>65000</td>
+          </tr>
+        </tbody>
+        <!-- <tfoot> kullanılabilir <footer> kullanılabilir-->
+        <tfoot>
+          <tr>
+            <th colspan="3">Toplam Maaş</th>
+            <td>200000</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>

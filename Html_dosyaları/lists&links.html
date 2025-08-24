@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,88 +7,99 @@
   </head>
   <body>
     <h1>List</h1>
-    <h3>Unorder List</h3>
-    <!--<ul> tagı unorder list demek sırasız liste yapmaya yarar yani-->
-    <ul>
-      <!--circle/disc/square-->
-      <!--burda liste elemanlarının yanında madde belirten işareti kendimiz type nı değiştirebiliyoruz hiç karışmasak disc olarak kendi atıyor-->
-      <!--<li> list item demek listwnin elemanları bunun içine yazılır-->
-      <li>List item 1</li>
-      <li>List item 2</li>
-      <li>List item 3</li>
-    </ul>
+    <div>
+      <h3>Unorder List</h3>
+      <!--<ul> tagı unorder list demek sırasız liste yapmaya yarar yani-->
+      <ul>
+        <!--circle/disc/square-->
+        <!--burda liste elemanlarının yanında madde belirten işareti kendimiz type nı değiştirebiliyoruz hiç karışmasak disc olarak kendi atıyor-->
+        <!--<li> list item demek listwnin elemanları bunun içine yazılır-->
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ul>
+    </div>
     <hr \ />
-    <h3>Nested List(iç içe liste)</h3>
-    <ul>
-      <li>
-        Sebzeler
-        <ul>
-          <li>Domates</li>
-          <li>Salatalık</li>
-          <li>Biber</li>
-        </ul>
-      </li>
-      <li>
-        Meyveler
-        <ul>
-          <li>Elma</li>
-          <li>Armut</li>
-          <li>Muz</li>
-        </ul>
-      </li>
-      <li>
-        İçecek
-        <ul>
-          <li>Ayran</li>
-          <li>Su</li>
-          <li>Soda</li>
-        </ul>
-      </li>
-    </ul>
+    <div>
+      <h3>Nested List(iç içe liste)</h3>
+      <ul>
+        <li>
+          Sebzeler
+          <ul>
+            <li>Domates</li>
+            <li>Salatalık</li>
+            <li>Biber</li>
+          </ul>
+        </li>
+        <li>
+          Meyveler
+          <ul>
+            <li>Elma</li>
+            <li>Armut</li>
+            <li>Muz</li>
+          </ul>
+        </li>
+        <li>
+          İçecek
+          <ul>
+            <li>Ayran</li>
+            <li>Su</li>
+            <li>Soda</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
     <hr \ />
-    <h3>Ordered List(sıralı liste)</h3>
-    <!-- <ol> kullanacağız-->
-    <ol start="10">
-      <!--type ve start noktasını kendimiz belirleyebilirz-->
-      <!--iç içe liste oluşturabiliriz hatta iç içe sıralı veya sırasız farketmeksizin oluşturabiliriz-->
-      <li>
-        liste
-        <ul>
-          <li>iç içe listenin 1. elemanı</li>
-          <li>iç içe listenin 2. elemanı</li>
-          <li>iç içe listenin 3. elemanı</li>
-        </ul>
-      </li>
-      <li>
-        liste
-        <ol type="a" start="5">
-          <!-- eğer harfleri kullanıp ama a dan değil de e den başlasın falan istiyorsam alfabedeki sırasına göre start ı belirleyeceğim-->
-          <li>iç içe 2. listenin 1. elemanı</li>
-          <li>iç içe 2. listenin 2. elemanı</li>
-          <li>iç içe 2. listenin 3. elemanı</li>
-        </ol>
-      </li>
-      <li>liste</li>
-    </ol>
+    <div>
+      <h3>Ordered List(sıralı liste)</h3>
+      <!-- <ol> kullanacağız-->
+      <ol start="10">
+        <!--type ve start noktasını kendimiz belirleyebilirz-->
+        <!--iç içe liste oluşturabiliriz hatta iç içe sıralı veya sırasız farketmeksizin oluşturabiliriz-->
+        <li>
+          liste
+          <ul>
+            <li>iç içe listenin 1. elemanı</li>
+            <li>iç içe listenin 2. elemanı</li>
+            <li>iç içe listenin 3. elemanı</li>
+          </ul>
+        </li>
+        <li>
+          liste
+          <ol type="a" start="5">
+            <!-- eğer harfleri kullanıp ama a dan değil de e den başlasın falan istiyorsam alfabedeki sırasına göre start ı belirleyeceğim-->
+            <li>iç içe 2. listenin 1. elemanı</li>
+            <li>iç içe 2. listenin 2. elemanı</li>
+            <li>iç içe 2. listenin 3. elemanı</li>
+          </ol>
+        </li>
+        <li>liste</li>
+      </ol>
+    </div>
     <hr \ />
-    <h3>Description List(Açıklama Listesi)</h3>
-    <dl>
-      <!--<dl> description list-->
-      <dt>Profil</dt>
-      <!--description term açıklamanın başlığı gibi-->
-      <dd>Ben Mustafa AYYILDIZ üniversite 3. sınıf öğrencisiyim</dd>
-      <!--<dd> description detail detaylar yani-->
-      <dt>Biografi</dt>
-      <dd>Siverkte doğdum 22 yaşındayım</dd>
-    </dl>
+    <div>
+      <h3>Description List(Açıklama Listesi)</h3>
+      <dl>
+        <!--<dl> description list-->
+        <dt>Profil</dt>
+        <!--description term açıklamanın başlığı gibi-->
+        <dd>Ben Mustafa AYYILDIZ üniversite 3. sınıf öğrencisiyim</dd>
+        <!--<dd> description detail detaylar yani-->
+        <dt>Biografi</dt>
+        <dd>Siverkte doğdum 22 yaşındayım</dd>
+      </dl>
+    </div>
     <hr \ />
     <hr \ />
-    <h1>Link</h1>
-    <!-- <a> etiketini kullanırız-->
-    <a href="https://www.linkedin.com/in/mustafa-ayy%C4%B1ld%C4%B1z-bb9741275/"
-      >Linkedln' e git</a
-    ><br \ /><!--eğer böyle yparsam direk aynı sekmede o sayfayı açar-->
-    <a target="_blank" href="https://github.com/Mstfayldz">GitHub'a git</a
-    ><!--target kullanırsak başka segmede bu linki açar-->
+    <div>
+      <h1>Link</h1>
+      <!-- <a> etiketini kullanırız-->
+      <a
+        href="https://www.linkedin.com/in/mustafa-ayy%C4%B1ld%C4%B1z-bb9741275/"
+        >Linkedln' e git</a
+      ><br \ /><!--eğer böyle yparsam direk aynı sekmede o sayfayı açar-->
+      <a target="_blank" href="https://github.com/Mstfayldz">GitHub'a git</a
+      ><!--target kullanırsak başka segmede bu linki açar-->
+    </div>
   </body>
 </html>
