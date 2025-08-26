@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formlar</title>
+  </head>
+  <body>
+    <div>
+      <h3>Formlar kontroller</h3>
+      <form action="\gideceğini belirlediğimiz yer" method="(get/post gibi)">
+        <label for="">Adınız</label>
+        <!--inputların doldurulması zorunlu olması için "required" kullanılır-->
+        <input
+          type="text"
+          placeholder="Adınızı giriniz..."
+          required
+        /><!--placeholder yer tutucu-->
+        <br \ />
+        <label for="">Soyadınız</label>
+        <input type="text" required />
+        <br \ />
+        <button>Gönder</button>
+        <!-- type'ı submit yapınca gönderilecek bir input olduğunu algılıyor-->
+        <input type="submit" value="Gönder" />
+      </form>
+    </div>
+    <hr \ />
+    <hr \ />
+    <div>
+      <h3>Girdi tipleri</h3>
+      <form action="gidecek yer" method="post">
+        <input type="text" />
+        <br \ />
+        <br \ />
+        <input type="button" value="button" />
+        <br \ />
+        <br \ />
+        <input
+          type="checkbox"
+          name="sozleşme"
+          id="sozleşme"
+        /><!--burdaki name ve id labela bastığımda da işaretlenmeyi sağlar ordaki for ayesinde-->
+        <label for="sozleşme">Kabul ediyorum</label>
+        <br \ /><br \ />
+        <input type="date" name="" id="" />
+        <br \ /><br \ />
+        <input type="email" name="" id="" />
+        <br \ /><br \ />
+        <input type="file" name="" id="" />
+        <br \ /><br \ />
+        <input type="number" name="" id="" />
+        <br \ /><br \ />
+        <input type="password" name="" id="" />
+        <br \ /><br \ />
+        <input type="radio" name="seçim" id="seçim" />
+        <label for="seçim">Seçim 1</label>
+        <input type="radio" name="seçim" id="seçimm" />
+        <label for="seçimm">Seçim 2</label>
+        <br \ /><br \ />
+        <input type="range" name="" id="" />
+        <br \ /><br \ />
+        <input type="search" name="" id="" />
+        <br \ /><br \ />
+        <input type="url" name="" id="" />
+        <br \ />
+        <br \ />
+        <h3>Form araçları</h3>
+        <!--yazmak istediğimiz paragrafın boyutunu ayarlayabiliriz-->
+        <textarea name="" id="" cols="30" rows="1"></textarea>
+        <br \ /><br \ />
+        <select name="" id="">
+          <option value="istanbul">İstanbul</option>
+          <option value="ankara">Ankara</option>
+          <option value="gaziantep">Gaziantep</option>
+          <option value="sanliurfa">Şanlıurfa</option>
+          <option value="konya">Konya</option>
+        </select>
+      </form>
+    </div>
+  </body>
+</html>
