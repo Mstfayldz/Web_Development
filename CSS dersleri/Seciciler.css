@@ -1,0 +1,62 @@
+/* * kullanmak çağırıldığı html sayfasındaki her şey için demek */
+/* *{
+    background-color: brown;
+*
+}*/
+/* istediğim değerde değişiklik yapmak için:*/
+h2,h4{
+    background-color: blue;
+}
+/* Diyelim ki sadece bir paragrafı seçmemiz gerekiyor değişiklik yapmak için eğer öyle yapacaksak id kullanmamız lazım html dosyasında o paragrafa vereceğimiz id yi kullanmalıyız ve burda da # ile çağırırız*/
+#p1{
+    background-color: aquamarine;
+}
+/* bunu class ile de yapabilirz aynı mantıkta sadece classı çağırırken "." kullanrız*/
+.p1{
+    font-size: 20px;
+}
+/* komşu ve çocuk olayı vardır mesela div in içine paragraf yazarsan ve o paragrafı çağırmak istersen "div > p{" diyerek devam edebilirsin komşu içinse mesela h2 nin altında  olan p yi seçecem "h2 + p{" demek yeterli olur*/
+h5 +p{
+    background-color: orange;
+}
+/*aynı mantıkta tüm komşularını da seçebilirsin mesela " h5~ p{" h5 in bütün paragraf komşularını al demek*/
+h6 ~ p{
+    background-color: purple;
+}
+/* p:first-child{ veya p:last-child{ şeklinde seçip değişiklik yapabiliyoruz*/
+/* p:first-child{
+    font-weight: bold;
+}
+p:last-child{
+    background-color: red;
+} */
+ /* listelerde nokta atışı değişiklikler yapılabilir */
+            /* li:nth-child(3){
+                background-color: red;
+            } */
+
+
+ /* listede tek çifte göre de değişiklik yapabiliriz*/
+ li:nth-child(even){
+    background-color: gray;
+ }
+
+ /* Butonun üzerine geldiğimde renk değişsin istiyorsam "hover*/
+
+ button:hover{
+    background-color: chartreuse;
+ }
+
+ /* bir şeye tıkladığımda rengi değişsin istiyorsam "focus*/
+ input:focus{
+    background-color: blue;
+ } 
+
+ /*bir şeyin başına veya sonuna bir şeyler ekleyebiliriz*/
+ h1::before{
+    content:"💯​";
+ }
+ h1::after{
+    content:"💫";
+ }
+ /* p:not(.special){   ==> demek special classına sahip olmayan paragraflar demek

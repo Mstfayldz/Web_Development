@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renkler</title>
+    <style>
+      #p1 {
+        /* ÖN TANIMLI RENKLER İLE*/
+        /* background-color: red; */
+
+        /*RGB (RED,GREEN,BLUE) ile*/
+        /*background-color: rgb(10, 50, 20);*/
+        /* burda sırasıyla red,green,blue tolarını istiyor 0-255 arası */
+
+        /*HEXADECIMAL*/
+        /* background-color: #123456; */
+
+        /* HSL (HUE,SATURATION,LIGHTNESS)/(RENK,DOYGUNLUK,AYDINLIK)*/
+        /* background-color: hsl(50, 40%, 35%); */
+
+        /*ALPHA ==>SEÇİLEN RENGİN OPAK MI SAYDAM MI OLMASINI BELİRLER*/
+        background-color: rgba(
+          20,
+          40,
+          30,
+          0.5
+        ); /*sondaki 1 tam getir demek 0.5 yarı opak  hsl de de hsla olarak yapılabilir*/
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p id="p1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dicta
+        tempore eos tenetur numquam nemo, aliquam quasi. Asperiores, neque
+        reiciendis. Exercitationem hic ipsam tempore suscipit sit totam
+        corrupti, assumenda repellendus.
+      </p>
+    </div>
+  </body>
+</html>
